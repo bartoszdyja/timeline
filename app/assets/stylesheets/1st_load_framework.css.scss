@@ -13,18 +13,29 @@ body {
 }
 
 
+
 h1 {
   font-weight: 800;
   font-size: 44px;
   line-height: 1.1;
 }
 
-.article{
-  text-align: center;
+p{
+  font-size: 16px;
+  text-align: justify;
 }
 
-.width70{
-  width: 70%;
+a {
+  color: inherit;
+}
+
+.container-fluid{
+  width: 80%;
+}
+
+.article{
+  border-left: 2px solid red;
+  margin-bottom: 60px;
 }
 
 .navbar {
