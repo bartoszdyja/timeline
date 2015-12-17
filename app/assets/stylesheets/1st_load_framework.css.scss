@@ -2,6 +2,45 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html {
+  height:  calc(100%-4%);
+}
+
+body {
+  font-family: 'Open Sans', arial;
+  height: 100%;
+  background: -webkit-linear-gradient(top, #ffffff, #f3f2f7 400px);
+}
+
+
+h1 {
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.article{
+  text-align: center;
+}
+
+.width70{
+  width: 70%;
+}
+
+.navbar {
+   padding-top: 20px;
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar li { color: #000 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -10,6 +49,7 @@ img {
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
+  font-weight: 800;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -35,7 +75,7 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  // background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
