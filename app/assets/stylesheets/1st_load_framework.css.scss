@@ -21,8 +21,7 @@ h1 {
 }
 
 p{
-  font-size: 16px;
-  text-align: justify;
+  font-size: 18px;
 }
 
 a {
@@ -31,6 +30,13 @@ a {
 
 .container-fluid{
   width: 80%;
+}
+
+.footer{
+  text-align: right;
+  font-style: italic;
+  font-size: 14px;
+  color: #9C9C9C;
 }
 
 .article{
