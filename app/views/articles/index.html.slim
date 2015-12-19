@@ -1,5 +1,5 @@
 -articles.each do |article|
-  .article
+  .article  class="#{colorize(article.category.name)}"
     h1=link_to article.title, article_path(article)
     p=article.content
     p.footer Accomplished in #{formatted_date(article.created_at)}

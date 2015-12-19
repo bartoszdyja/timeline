@@ -184,6 +184,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.4.2)
+    redcarpet (3.3.3)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rspec-core (3.4.1)
@@ -281,6 +282,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   capybara
+  coderay
   coffee-rails (~> 4.1.0)
   database_cleaner
   decent_exposure
@@ -303,6 +305,7 @@ DEPENDENCIES
   rails_apps_pages
   rails_apps_testing
   rails_layout
+  redcarpet
   rspec-rails
   rubocop
   sass-rails (~> 5.0)
