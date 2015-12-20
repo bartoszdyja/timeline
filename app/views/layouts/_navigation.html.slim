@@ -18,5 +18,5 @@ nav.navbar.navbar-default
           ul.dropdown-menu role="menu" 
             -Category.all.each do |c|
               li
-                =link_to c.name
+                =link_to c.name.upcase, root_path(category_id: c.id)
             
