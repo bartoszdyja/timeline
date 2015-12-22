@@ -26,6 +26,7 @@ gem 'decent_exposure'
 gem 'redcarpet'
 gem 'coderay'
 gem 'yaml_db'
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
