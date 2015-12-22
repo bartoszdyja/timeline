@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :find_articles
   expose(:articles)
   expose(:article, attributes: :article_params)
