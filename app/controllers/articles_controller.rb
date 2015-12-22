@@ -30,6 +30,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :content, :category_id)
+    params.require(:article).permit(:title, :content, :category_id, :completed_on)
   end
 end
