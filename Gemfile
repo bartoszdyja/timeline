@@ -75,6 +75,7 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'shoulda-matchers', '~> 3.0'
 end
 
 group :production do

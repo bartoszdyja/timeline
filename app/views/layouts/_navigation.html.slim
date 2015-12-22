@@ -19,4 +19,6 @@ nav.navbar.navbar-default
             -Category.all.each do |c|
               li
                 =link_to c.name.upcase, root_path(category_id: c.id)
+      -if user_signed_in?
+        li=link_to 'LOGOUT', destroy_user_session_path, method: :delete
             
