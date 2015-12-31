@@ -1,6 +1,9 @@
+# Article model
 class Article < ActiveRecord::Base
   belongs_to :category
   belongs_to :user
 
-  validates_presence_of :title, :content, :category, :completed_on
+  self.per_page = 5
+
+  validates :title, :content, :category, :completed_on, presence: true
 end

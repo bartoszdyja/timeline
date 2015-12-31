@@ -2,7 +2,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :find_articles
-  expose(:articles) { Article.all.order('completed_on DESC') }
+  expose(:articles) { Article.order('completed_on DESC').page(params[:page]) }
   expose(:article, attributes: :article_params)
 
   def new
