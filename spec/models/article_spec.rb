@@ -9,15 +9,15 @@ RSpec.describe Article, type: :model do
   end
 
   describe 'db columns' do
-    it {is_expected.to have_db_column :title}
-    it {is_expected.to have_db_column :content}
-    it {is_expected.to have_db_column :completed_on}
-    it {is_expected.to have_db_column :category_id}
-    it {is_expected.to have_db_column :user_id}
+    it { is_expected.to have_db_column :title }
+    it { is_expected.to have_db_column :content }
+    it { is_expected.to have_db_column :completed_on }
+    it { is_expected.to have_db_column :category_id }
+    it { is_expected.to have_db_column :user_id }
   end
 
   describe 'associations' do
-    it {is_expected.to belong_to :user}
-    it {is_expected.to belong_to :category}
+    it { is_expected.to belong_to :user }
+    it { is_expected.to belong_to :category }
   end
 end
