@@ -21,7 +21,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'decent_exposure'
-gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 gem 'redcarpet'
 gem 'coderay'
 gem 'yaml_db'
