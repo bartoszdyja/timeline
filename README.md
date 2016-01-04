@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/railsbeginner/timeline.svg)](https://travis-ci.org/railsbeginner/timeline)
 Timeline
 ================
 
