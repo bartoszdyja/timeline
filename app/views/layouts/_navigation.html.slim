@@ -9,11 +9,10 @@ nav.navbar.navbar-default
     = link_to 'Learning Timeline', root_path, class: 'navbar-brand'
   .collapse.navbar-collapse
     ul.nav.navbar-nav.navbar-right
-      li=link_to 'CONTACT US'
-      li=link_to 'ARTICLES'
+      li=link_to t('articles')
       li.dropdown
           a.dropdown-toggle data-toggle="dropdown" href="#" 
-            | CATEGORIES
+            =t('categories')
             span.caret
           ul.dropdown-menu role="menu" 
             -Category.all.each do |c|

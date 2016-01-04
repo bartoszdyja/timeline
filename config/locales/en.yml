@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  articles: 'ARTICLES'
+  categories: 'CATEGORIES'
   hello: "Hello world"
