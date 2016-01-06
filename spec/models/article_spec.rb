@@ -20,4 +20,19 @@ RSpec.describe Article, type: :model do
     it { is_expected.to belong_to :user }
     it { is_expected.to belong_to :category }
   end
+
+  describe 'attributes' do
+    category = Category.new(name: 'coding')
+    user = User.new(name: 'John')
+    article = Article.new(title: 'test_title', content: 'abc', category: category, completed_on: Date.today, user: user)
+
+    it 'is valid with all attributes' do
+      expect(article).to be_valid
+    end
+
+    it 'is invalid without title' do
+      article.update(title: nil)
+      expect(article).to_not be_valid
+    end
+  end
 end

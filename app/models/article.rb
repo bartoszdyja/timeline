@@ -5,5 +5,5 @@ class Article < ActiveRecord::Base
 
   self.per_page = 5
 
-  validates :title, :content, :category, :completed_on, presence: true
+  validates :title, :content, :category, :completed_on, :user, presence: true
 end

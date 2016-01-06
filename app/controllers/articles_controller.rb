@@ -7,8 +7,12 @@ class ArticlesController < ApplicationController
   expose(:article, attributes: :article_params)
 
   def create
-    article.save
-    redirect_to article
+    article.user = current_user
+    if article.save
+      redirect_to article
+    else
+      render 'new'
+    end
   end
 
   def update
