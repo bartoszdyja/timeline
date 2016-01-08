@@ -24,15 +24,20 @@ RSpec.describe Article, type: :model do
   describe 'attributes' do
     category = Category.new(name: 'coding')
     user = User.new(name: 'John')
-    article = Article.new(title: 'test_title', content: 'abc', category: category, completed_on: Date.today, user: user)
+    article = Article.new(title: 'test_title', content: 'abc', category: category, completed_on: Time.zone.today, user: user)
 
-    it 'is valid with all attributes' do
+    it 'create valid article' do
       expect(article).to be_valid
     end
 
     it 'is invalid without title' do
       article.update(title: nil)
       expect(article).to_not be_valid
+    end
+
+    it 'can be updated' do
+      article.update(title: 'cde')
+      expect(article.title).to eq 'cde'
     end
   end
 end
