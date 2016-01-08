@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   expose(:articles)
   expose(:paginated_articles) { articles.order('completed_on DESC').page(params[:page]) }
   expose(:article, attributes: :article_params)
+  expose(:comments) { article.comments }
 
   def create
     article.user = current_user

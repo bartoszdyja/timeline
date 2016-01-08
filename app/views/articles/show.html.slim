@@ -1,2 +1,4 @@
 h1=article.title
 p=markdown(article.content)
+-if comments.any?
+  =render comments
