@@ -1,0 +1,4 @@
+p Comment form
+=simple_form_for comment, url: article_comments_path(article) do |c|
+  =c.input :content
+  =c.button :submit
