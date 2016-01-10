@@ -25,6 +25,7 @@ gem 'will_paginate-bootstrap'
 gem 'redcarpet'
 gem 'coderay'
 gem 'yaml_db'
+gem "omniauth-google-oauth2"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
